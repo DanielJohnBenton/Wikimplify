@@ -13,6 +13,8 @@ People with different needs use the Simple English Wikipedia. They include:
 - Adults who might find it hard to learn or read
 - People who are learning English as a second language
 
+A simpler explanation at the cost of some detail can be a worthwhile companion read. I sometimes find it useful to get the gist, or to simplify an article written by experts in a domain with which I am not very familiar.
+
 The name is a combination of "Wikipedia" and "simplify".
 
 ## Privacy
