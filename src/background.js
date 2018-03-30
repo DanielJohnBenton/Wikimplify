@@ -17,7 +17,7 @@ chrome.runtime.onMessage.addListener(
 			if(result.indexOf(doesNotHave) === -1)
 			{
 				// There is a simple page
-				chrome.tabs.sendMessage(sender.tab.id, {"text": "SIMPLE_EXISTS"});
+				chrome.tabs.sendMessage(sender.tab.id, {"text": "SIMPLE_EXISTS", "url": simpleUrl});
 			}
 		}
 		
