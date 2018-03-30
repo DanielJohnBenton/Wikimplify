@@ -6,6 +6,13 @@ Wikimplify provides an easy link when a [Simple English Wikipedia](https://simpl
 
 ![screenshot](img/screenshot_simple.png)
 
+People with different needs use the Simple English Wikipedia. They include:
+
+- Students
+- Children
+- Adults who might find it hard to learn or read
+- People who are learning English as a second language
+
 The name is a combination of "Wikipedia" and "simplify".
 
 ## Privacy
