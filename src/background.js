@@ -1,5 +1,12 @@
 chrome.runtime.onMessage.addListener(
 	function(message, sender, sendResponse) {
-		alert(message);
+		if(message["LANGUAGE"] == "en")
+		{
+			var urlParts = message["URL"].split("/");
+			var lastPart = urlParts.pop();
+			var firstPart = urlParts.join("/");
+			var simpleUrl = firstPart.split("//en.wikipedia").join("//simple.wikipedia") +"/"+ lastPart;
+			alert(simpleUrl);
+		}
 	}
 );
