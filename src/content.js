@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(
 		{
 			var h1 = document.getElementsByTagName("h1")[0];
 			var link = document.createElement("a");
-			var linkText = document.createTextNode("Simple available -->");
+			var linkText = document.createTextNode("Simple available →");
 			link.setAttribute("href", message.url);
 			link.appendChild(linkText);
 			
