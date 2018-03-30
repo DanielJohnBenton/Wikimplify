@@ -20,14 +20,12 @@
 	[
 		{
 			"matches": [
-				"https://en.wikipedia.org/wiki/*",
-				"http://en.wikipedia.org/wiki/*"
+				"https://en.wikipedia.org/wiki/*"
 			],
 			"js": ["content.js"]
 		}
-	]/*,
-	"permissions":
-	[
-		"activeTab"
-	]*/
+	],
+	"permissions": [
+		"https://*.wikipedia.org/*"
+	]
 }

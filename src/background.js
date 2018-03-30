@@ -6,7 +6,22 @@ chrome.runtime.onMessage.addListener(
 			var lastPart = urlParts.pop();
 			var firstPart = urlParts.join("/");
 			var simpleUrl = firstPart.split("//en.wikipedia").join("//simple.wikipedia") +"/"+ lastPart;
-			alert(simpleUrl);
+			
+			var request = new XMLHttpRequest();
+			request.open("GET", simpleUrl, false);
+			request.send();
+			var result = request.responseText;
+			
+			var doesNotHave = "Wikipedia does not yet have an article with this name";
+			
+			if(result.indexOf(doesNotHave) !== -1)
+			{
+				alert("no");
+			}
+			else
+			{
+				alert("yes");
+			}
 		}
 	}
 );
