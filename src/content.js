@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener(
 			link.appendChild(linkText);
 			
 			insertAfter(link, h1);
-			//insertAfter(link, document.createElement("hr"));
+			insertAfter(document.createElement("p"), link);
 		}
 	}
 );
