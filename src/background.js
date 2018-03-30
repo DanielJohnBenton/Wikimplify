@@ -14,14 +14,13 @@ chrome.runtime.onMessage.addListener(
 			
 			var doesNotHave = "Wikipedia does not yet have an article with this name";
 			
-			if(result.indexOf(doesNotHave) !== -1)
+			if(result.indexOf(doesNotHave) === -1)
 			{
-				alert("no");
-			}
-			else
-			{
-				alert("yes");
+				// There is a simple page
+				chrome.tabs.sendMessage(sender.tab.id, {"text": "SIMPLE_EXISTS"});
 			}
 		}
+		
+		return true;
 	}
 );
